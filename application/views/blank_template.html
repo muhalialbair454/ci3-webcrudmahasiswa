@@ -1,113 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Load Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <!-- Load Bootstrap -->
-    <link rel="stylesheet" href="/frontend/libraries/bootstrap/css/bootstrap.min.css">
-    <!-- Load Jquery Data Tables -->
-    <link rel="stylesheet" href="/frontend/libraries/jquery/data-tables/css/jquery.dataTables.min.css">
-    <!-- Load Main CSS -->
-    <link rel="stylesheet" href="/frontend/styles/main.css">
 
-    <title>Document</title>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Load Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+	<!-- Load Bootstrap -->
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/libraries/bootstrap/css/bootstrap.min.css">
+	<!-- Load Jquery Data Tables -->
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets//libraries/jquery/data-tables/css/jquery.dataTables.min.css">
+	<!-- Load Main CSS -->
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/styles/main.css">
+
+	<title>Document</title>
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <nav id="mainnav" class="row navbar-expand-lg navbar-light bg-black">
-        <div class="container">
-            <div class="row">
-                <a href="" class="navbar-brand">
-                    <img src="./images/Logo.png" alt="Logo CODEIGNITER">
-                </a>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
+	<!-- Navbar -->
+	<nav id="mainnav" class="row navbar-expand-lg navbar-light bg-black">
+		<div class="container">
+			<div class="row">
+				<a href="" class="navbar-brand">
+					<img src="<?php echo base_url(); ?>assets/images/Logo.png" alt="Logo CODEIGNITER">
+				</a>
+			</div>
+		</div>
+	</nav>
+	<!-- End Navbar -->
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Crud <b>Mahasiswa</b></h1>
-        </div>
-    </header>
-    <!-- End Header -->
+	<!-- Header -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="menu-button mr-auto">
+					<a href="" class="btn-menu">List Data Mahasiswa</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header -->
 
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <div class="tambah-data-button">
-                        <a href="" class="btn btn-tambah-data">Tambah Data</a>
-                    </div>
-                    <div class="table-responsive pt-5">
-                        <table class="table table-bordered table-striped" id="myTable">
-                            <thead>
-                                <tr>
-                                    <th class="text-center">No</th>
-                                    <th class="text-center">Foto</th>
-                                    <th class="text-center">Nama</th>
-                                    <th class="text-center">NIM</th>
-                                    <th class="text-center">Tanggal Lahir</th>
-                                    <th class="text-center">Jurusan</th>
-                                    <th class="text-center">Alamat</th>
-                                    <th class="text-center">Email</th>
-                                    <th class="text-center">No. Telepon</th>
-                                    <th class="text-center" colspan="2">Aksi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="./images/Logo.png" alt=""></td>
-                                    <td>Muhammad Ali Albair</td>
-                                    <td>54416698</td>
-                                    <td>21-11-1998</td>
-                                    <td>Teknik Informatika</td>
-                                    <td>Jakarta</td>
-                                    <td>Muhalialbair787@gmail.com</td>
-                                    <td>0856xxxxxxx</td>
-                                    <td>
-                                        <center>
-                                            <a href="" class="btn btn-primary"><i class="fas fa-edit"></i></a>
-                                        </center>
-                                    </td>
-                                    <td>
-                                        <center>
-                                            <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                                        </center>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- End Main Content -->
+	<!-- Main Content -->
+	<main>
+		<div class="container">
+			<div class="card">
+				<div class="card-body">
+					<div class="aksi-button mb-3">
+						<a href="<?php echo site_url("addmahasiswa"); ?>" class="btn btn-tambah-data"> <i class="fas fa-plus"></i> Tambah Data</a>
+						<a href="" class="btn btn-print-data"> <i class="fas fa-print"></i> Print</a>
+						<a href="" class="btn btn-print-data"> <i class="fas fa-file-excel"></i> Export Excel</a>
+						<a href="" class="btn btn-print-data"> <i class="fas fa-file-pdf"></i> Export PDF</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- End Main Content -->
 
-   
 
-    <!-- Load Bootstrap -->
-    <script src="/frontend/libraries/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Load Jquery -->
-    <script src="/frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
-    <!-- Load Jquery Data Tables -->
-    <script src="/frontend/libraries/jquery/data-tables/js/jquery.dataTables.min.js"></script>
-    <!-- Load Jquery Validate -->
-    <script src="/frontend/libraries/jquery/validate/jquery.validate.min.js"></script>
-    <!-- Load Main CSS -->
-    <script src="/frontend/scripts/main.js"></script>
-    <script>
-        $(document).ready( function () {
-        $('#myTable').DataTable();
-        } );
-    </script>
+
+	<!-- Load Bootstrap -->
+	<script src="<?php echo base_url(); ?>assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Load Jquery -->
+	<script src="<?php echo base_url(); ?>assets/libraries/jquery/jquery-3.6.0.min.js"></script>
+	<!-- Load Jquery Data Tables -->
+	<script src="<?php echo base_url(); ?>assets/libraries/jquery/data-tables/js/jquery.dataTables.min.js"></script>
+	<!-- Load Jquery Validate -->
+	<script src="<?php echo base_url(); ?>assets/libraries/jquery/validate/jquery.validate.min.js"></script>
+	<!-- Load Main JS -->
+	<script src="<?php echo base_url(); ?>assets/scripts/main.js"></script>
 </body>
+
 </html>

@@ -52,3 +52,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'mahasiswa';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+// Routes Mahasiswa
+$route['addmahasiswa'] = 'mahasiswa/addMahasiswa';
+$route['updateaddmahasiswa'] = 'mahasiswa/updateAddMahasiswa';
+$route['editmahasiswa/(:any)'] = 'mahasiswa/editMahasiswa/$1';
+$route['updateeditmahasiswa'] = 'mahasiswa/updateEditMahasiswa';
+$route['updateeditmahasiswa/(:any)'] = 'mahasiswa/deleteMahasiswa/$1';
+$route['printlistdatamahasiswa'] = 'mahasiswa/printListDataMahasiswa';
+$route['exportpdflistdatamahasiswa'] = 'mahasiswa/exportPdfListDataMahasiswa';
+$route['exportexcellistdatamahasiswa'] = 'mahasiswa/exportExcelListDataMahasiswa';
