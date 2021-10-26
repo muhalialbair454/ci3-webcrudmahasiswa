@@ -43,3 +43,5 @@ INSERT INTO tbl_data_mahasiswa(	npm,
                                 'muhalialbair787@gmail.com',
 								'0856xxxxxxxx',
                                 'ali.jpg');
+
+SELECT * FROM tbl_data_mahasiswa;
