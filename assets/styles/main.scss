@@ -1,0 +1,81 @@
+body{
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-decoration: none;
+}
+
+// Navbar
+nav#mainnav{
+    background-color: #000000;
+    .navbar-brand{
+        img{
+            max-height: 50px;
+        }
+    }
+    h2{
+        color: #FF4900;
+        margin-top: 10px;
+    }
+}
+
+// Header
+header{
+    margin: 50px 0;
+    .menu-button{
+        .btn-menu{
+            text-decoration: none;
+            padding: 10px;
+            background-color: #FF4900;
+            border-radius: 5px ;
+            font-size: 18px;
+            color: #fff;
+    
+            &:hover{
+            background-color: #fa6d35;
+            color: #fff;
+            }
+        }
+    }
+}
+
+// Main
+main{
+    
+    .aksi-button{
+        border-radius: 5px;
+        text-align: center;
+        .btn-tambah-data{
+            background-color: #FF4900;
+            font-size: 16px;
+            padding: 5px;
+            color: #fff;
+        }
+        .btn-print-data{
+            background-color: #FF4900;
+            font-size: 16px;
+            padding: 5px;
+            color: #fff;
+        }
+    }
+    .card{
+        .card-body{
+            .aksi-button{
+                button#btnsave{
+                    min-width: 100px;
+                    background-color: #FF4900;
+                    font-size: 16px;
+                    padding: 5px;
+                    color: #fff;
+                    border-radius: 5px;
+                    text-align: center;
+                    border: none;
+                }
+            }
+            div.form-error p{
+                color:red;
+            }
+        }
+    }
+}
+
